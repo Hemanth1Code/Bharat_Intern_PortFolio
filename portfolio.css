@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: "Roboto";
+    background-color: white;
+    scroll-behavior: smooth;
+
+}
+
+.bg {
+    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
+    background-size: cover;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*nav bar and homepage */
+#homepage {
+    padding: 3vw;
+    margin-top: 15%;
+}
+
+nav {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO0tdXWFVKGPd_2PthIqKMOzFUpKRg3ZziZQ&usqp=CAU');
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.nav-logo {
+    height: 65px;
+
+}
+
+.navName {
+    color: black;
+    font-size: 2vh;
+}
+
+
+/*< = homepage Section/>*/
+#homepage {
+    display: flex;
+    padding-top: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* < Typed Text /> */
+.element {
+    color: #83f2ef;
+    font-family: "Times New Roman";
+}
+
+.dot {
+    font-size: 16px;
+}
+
+.container {
+    width: 95%;
+    color: white;
+    padding: 4vw;
+    background-size: cover;
+
+}
+
+/* < Social icons />*/
+.social-icon {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px;
+    color: white;
+    padding: 1vh;
+}
+
+/*Buttons */
+button {
+    border-radius: 5px;
+    border: none;
+
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 22px;
+}
+
+.contact-me {
+    border: 1px solid black;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: white;
+    color: black;
+    letter-spacing: 0.1vw;
+}
+
+.Resume {
+    font-size: 2vh;
+    padding: 1vh;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+.homePage-IMG {
+
+    height: 32vh;
+    margin: 12px;
+}
+
+/*About section */
+.about-section {
+    padding: 5vw;
+    /* background-color: #E7FFF6;*/
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO0tdXWFVKGPd_2PthIqKMOzFUpKRg3ZziZQ&usqp=CAU');
+}
+
+.about-section h1 {
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.about-section p {
+    font-size: 2vh;
+}
+
+
+.secondContainer {
+    background-color: white;
+    padding: 3vw;
+    border-radius: 2vw;
+}
+
+
+.button1 {
+    height: 5vh;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 2vw;
+    font-size: 3vh;
+    font-weight: bold;
+    width: 95%;
+    text-align: center;
+}
+
+.secondContainer h2 {
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+.secondContainer .learn {
+    color: #f57242;
+    font-size: 10px;
+
+}
+
+.secondContainer p {
+    font-size: 18px;
+}
+
+.intern-img {
+    height: 4vh;
+    max-width: 25%;
+}
+
+.intern-img1 {
+    height: 14vh;
+}
+
+.intern-info {
+    padding-left: 4%;
+    text-align: left;
+}
+
+.intern-info1 {
+    padding-left: 4%;
+    text-align: left;
+}
+
+.clg-info {
+    padding-left: 3vw;
+}
+
+hr {
+    width: 50vw;
+}
+
+.intern-company {
+    font-size: 2vh !important;
+}
+
+.intern-due {
+    font-size: 2vh !important;
+}
+
+.intern-roles {
+    font-size: 3vh !important;
+}
+
+#experienceInfo {
+    display: none;
+    margin-top: 12px;
+}
+
+#skillsInfo {
+    margin: 12px;
+
+}
+
+#educationInfo {
+    margin: 12px;
+    display: none;
+}
+
+/*Service  Section*/
+
+#serviceSection {
+    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
+    color: white;
+}
+
+.skills-bg {
+    background-color: white;
+
+}
+
+.Serviceinfo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.Serviceinfo {
+    padding: 12px;
+
+}
+
+.Serviceinfo p {
+    font-size: 18px;
+}
+
+.serviceCard {
+    background-color: white;
+    color: black;
+    margin-bottom: 2vh;
+    outline: 3px solid #3e665a;
+    outline-offset: -10px;
+    border-radius: 1vw;
+
+}
+
+.serviceCard h1 {
+    font-size: 24px;
+}
+
+.serviceCard p {
+    font-size: 16px;
+}
+
+.ServiceInfo1 {
+    padding: 2vw;
+    text-align: center;
+}
+
+.serviceLogo {
+    color: black;
+    display: flex;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: start;
+}
+
+/*read more web development */
+.button3 {
+    margin-bottom: 2vh;
+}
+
+/*Projects section*/
+
+.projectCard {
+    padding: 1vw;
+    flex-grow: 1;
+    border: 1px solid #505250;
+    margin: 2vw;
+}
+
+.ProjectImgContainer {
+    text-align: center;
+}
+
+.projectInfo h1 {
+    font-size: 2vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.projectCard p {
+    font-size: 1.4vh;
+    margin-left: 1vw;
+}
+
+
+.btnDemo {
+    background-color: #40e66c;
+    color: white;
+    margin-left: 1vw;
+    color: white;
+}
+
+/*Contact Form */
+.contactForm {
+    color: white;
+    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
+
+}
+
+.contactForm a {
+    color: white;
+}
+
+.contactForm input {
+    border: white 1px solid;
+}
+
+.contactForm textarea {
+    border: white 1px solid;
+}
+
+.button2 {
+    border: 1px solid black;
+    color: black;
+    margin-bottom: 2vh;
+    background-color: transparent;
+}
+
+.buttonSubmit {
+    border: 1px solid white;
+}
+
+.Error {
+    padding: 3px;
+    color: #e3612d;
+    width: 54%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+
+.submitt {
+    text-align: center;
+}
+
+/* <small Devices media query /> */
+@media (max-width:768px) {
+
+    .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .skills-bg .about-title {
+        font-size: 3vh;
+    }
+
+    .skills-bg .about-desc {
+        font-size: 2vh;
+    }
+
+    .serviceLogo {
+        margin-top: 2vh;
+    }
+
+    scrollbar {
+        display: none;
+    }
+
+    .skills-bg {
+        height: 60vh;
+    }
+
+    .project-img {
+        height: 38vh;
+        width: 100%;
+    }
+
+    .project-img1 {
+        height: 38vh;
+        width: 100%;
+    }
+
+    .contactForm .mail {
+        font-size: 2vh;
+    }
+
+    .linkedin {
+        color: white;
+    }
+}
+
+.tq-img {
+    height: 25vh;
+}
+
+#modalBody {
+    display: none;
+}
+
+.star {
+    color: red;
+}
+
+.topButton {
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* <Large Devices media query /> */
+@media (min-width:992px) {
+    .Serviceinfo p {
+        font-size: 15px;
+        margin: 12px;
+        width: 50%;
+    }
+
+    .serviceCard {
+        height: 50vh;
+    }
+
+    .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .serviceLogo {
+        margin-top: 2vh;
+    }
+
+    #serviceSection {
+        padding: 3vw;
+    }
+
+    .projectCard {
+        width: 27vw;
+    }
+
+    .homePage-IMG {
+        height: 40vh;
+    }
+
+    .project-img {
+        width: 25vw;
+    }
+
+    .project-img1 {
+        width: 23vw;
+        height: 20vh;
+    }
+
+    .skills-bg {
+        height: 50vh;
+        margin-top: 2vh;
+    }
+}
