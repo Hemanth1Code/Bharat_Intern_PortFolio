@@ -3,27 +3,68 @@
 body {
     font-family: "Roboto";
     background-color: white;
-    scroll-behavior: smooth;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+#loaderEl {
+    display: none;
+}
+
+#moreProjects {
+    display: none;
+}
+
+.container h1 {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+
+.serviceCard {
+
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+.brand-logo {
+    height: 3vh;
+}
+
+#closeProjects {
+    display: none;
+}
+
+.btnDemo1 {
+    outline: 1px solid #b6bab7;
 }
 
 .bg {
-    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
     background-size: cover;
+    color: black;
 }
-
-
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /*nav bar and homepage */
 #homepage {
     padding: 3vw;
     margin-top: 15%;
+
 }
+
+.container p {
+    animation: 3s slidein !important;
+
+
+}
+
 
 nav {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO0tdXWFVKGPd_2PthIqKMOzFUpKRg3ZziZQ&usqp=CAU');
@@ -51,11 +92,17 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+}
+
+.homePage {
+    margin-top: 6vh;
 }
 
 /* < Typed Text /> */
 .element {
-    color: #83f2ef;
+    color: red;
     font-family: "Times New Roman";
 }
 
@@ -65,7 +112,7 @@ nav {
 
 .container {
     width: 95%;
-    color: white;
+    color: black;
     padding: 4vw;
     background-size: cover;
 
@@ -74,165 +121,59 @@ nav {
 /* < Social icons />*/
 .social-icon {
     font-size: 20px;
-    border: 1px solid white;
+    border: 1px solid #b6bab7;
     border-radius: 50%;
     margin: 5px;
-    color: white;
+    color: black;
     padding: 1vh;
 }
 
 /*Buttons */
-button {
-    border-radius: 5px;
-    border: none;
 
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 22px;
-}
 
 .contact-me {
-    border: 1px solid black;
+    border: 1px solid #b6bab7;
     font-size: 2vh;
     padding: 1vh;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     letter-spacing: 0.1vw;
 }
 
 .Resume {
     font-size: 2vh;
     padding: 1vh;
-    color: white;
+    color: black;
     font-weight: bold;
     letter-spacing: 0.3vw;
     background-color: transparent;
-    border: 1px solid white;
+    border: 2px solid #b6bab7;
 
 }
 
-.homePage-IMG {
-
-    height: 32vh;
-    margin: 12px;
-}
 
 /*About section */
-.about-section {
-    padding: 5vw;
-    /* background-color: #E7FFF6;*/
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO0tdXWFVKGPd_2PthIqKMOzFUpKRg3ZziZQ&usqp=CAU');
-}
-
-.about-section h1 {
-    font-weight: bold;
-    font-size: 3vh;
-}
-
-.about-section p {
-    font-size: 2vh;
-}
-
-
-.secondContainer {
-    background-color: white;
+#aboutSection {
     padding: 3vw;
-    border-radius: 2vw;
 }
 
-
-.button1 {
-    height: 5vh;
-    background-color: transparent;
-    border: 1px solid black;
-    margin: 2vw;
-    font-size: 3vh;
-    font-weight: bold;
-    width: 95%;
-    text-align: center;
-}
-
-.secondContainer h2 {
-    font-weight: bold;
-    font-size: 26px;
+.about {
+    color: #7a45ed;
+    border-right: 3px solid #7a45ed;
+    border-left: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
 }
 
-.secondContainer .learn {
-    color: #f57242;
-    font-size: 10px;
-
-}
-
-.secondContainer p {
-    font-size: 18px;
-}
-
-.intern-img {
-    height: 4vh;
-    max-width: 25%;
-}
-
-.intern-img1 {
-    height: 14vh;
-}
-
-.intern-info {
-    padding-left: 4%;
-    text-align: left;
-}
-
-.intern-info1 {
-    padding-left: 4%;
-    text-align: left;
-}
-
-.clg-info {
-    padding-left: 3vw;
-}
-
-hr {
-    width: 50vw;
-}
-
-.intern-company {
-    font-size: 2vh !important;
-}
-
-.intern-due {
-    font-size: 2vh !important;
-}
-
-.intern-roles {
-    font-size: 3vh !important;
-}
-
-#experienceInfo {
-    display: none;
-    margin-top: 12px;
-}
-
-#skillsInfo {
-    margin: 12px;
-
-}
-
-#educationInfo {
-    margin: 12px;
-    display: none;
-}
 
 /*Service  Section*/
 
 #serviceSection {
-    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
-    color: white;
+    color: black;
+    background-size: cover;
 }
 
 .skills-bg {
@@ -241,9 +182,18 @@ hr {
 }
 
 .Serviceinfo h1 {
-    font-size: 26px;
-    font-weight: bold;
-    margin-left: 1vw;
+    color: #7a45ed;
+    border-right: none;
+    border-left: 3px solid #7a45ed;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.ServiceInfo1 h1 {
+    color: #7a45ed;
 }
 
 .Serviceinfo {
@@ -259,22 +209,29 @@ hr {
     background-color: white;
     color: black;
     margin-bottom: 2vh;
-    outline: 3px solid #3e665a;
     outline-offset: -10px;
     border-radius: 1vw;
-
+    animation-name: slidein;
+    padding: 3vw;
 }
 
-.serviceCard h1 {
-    font-size: 24px;
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
-.serviceCard p {
-    font-size: 16px;
-}
 
 .ServiceInfo1 {
-    padding: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 2vh;
     text-align: center;
 }
 
@@ -283,21 +240,44 @@ hr {
     display: flex;
     padding: 16px;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
+
+}
+
+.serviceLogo i {
+    border: 1px solid #7a45ed;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.button2 {
+    background-color: #7a45ed !important;
+    color: white !important;
 }
 
 /*read more web development */
-.button3 {
+/*.button3 {
     margin-bottom: 2vh;
 }
 
 /*Projects section*/
+.project-main-info {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
 
 .projectCard {
     padding: 1vw;
     flex-grow: 1;
-    border: 1px solid #505250;
+    border: 1px solid #b6bab7;
     margin: 2vw;
+
+}
+
+.project-img {
+    width: 60vw;
 }
 
 .ProjectImgContainer {
@@ -315,6 +295,11 @@ hr {
     margin-left: 1vw;
 }
 
+.buttonmore {
+    border: 1px solid #b6bab7;
+    background-color: #7a45ed;
+    color: white;
+}
 
 .btnDemo {
     background-color: #40e66c;
@@ -323,51 +308,62 @@ hr {
     color: white;
 }
 
+.project-main-info h1 {
+    color: #7a45ed;
+    border-right: 3px solid #7a45ed;
+    border-left: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 /*Contact Form */
-.contactForm {
-    color: white;
-    background-image: url('https://wallpaper-house.com/data/out/7/wallpaper2you_161525.jpg');
+#contactSection {
+    margin: 2vw;
+}
+
+#contactSection input {
+    border: 0.2px solid #b6bab7;
+    border-radius: 4px;
+}
+
+
+#errorMsg {
+    color: red;
 
 }
 
-.contactForm a {
-    color: white;
-}
-
-.contactForm input {
-    border: white 1px solid;
-}
-
-.contactForm textarea {
-    border: white 1px solid;
-}
-
-.button2 {
-    border: 1px solid black;
-    color: black;
-    margin-bottom: 2vh;
-    background-color: transparent;
-}
-
-.buttonSubmit {
-    border: 1px solid white;
-}
-
-.Error {
-    padding: 3px;
-    color: #e3612d;
-    width: 54%;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 2vw;
-}
-
-.submitt {
-    text-align: center;
+.thank {
+    color: green !important;
+    margin-top: 2vh;
 }
 
 /* <small Devices media query /> */
 @media (max-width:768px) {
+    #crossMark {
+        display: none;
+    }
+
+    .about {
+        width: 45vw;
+    }
+
+    .Serviceinfo h1 {
+        width: 45vw;
+    }
+
+    #contactSection h1 {
+        width: 45vw;
+    }
+
+    .project-main-info h1 {
+        width: 75vw;
+    }
+
+    .project-img2 {
+        height: 25vh !important;
+    }
 
     .navbar {
         position: -webkit-sticky;
@@ -409,6 +405,10 @@ hr {
         width: 100%;
     }
 
+    .service-img {
+        margin: 3px;
+    }
+
     .contactForm .mail {
         font-size: 2vh;
     }
@@ -416,40 +416,157 @@ hr {
     .linkedin {
         color: white;
     }
+
+    .homePage-IMG {
+        height: 50vh !important;
+    }
+
+    .image-card button {
+        border-radius: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 }
 
-.tq-img {
-    height: 25vh;
-}
 
-#modalBody {
-    display: none;
-}
 
-.star {
-    color: red;
-}
 
-.topButton {
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid white;
+
+@media screen and (max-width:992px) {
+    .homePage-IMG {
+        height: 35vh !important;
+    }
+
+    .service-img {
+        height: 25vh !important;
+    }
+
+    .projectInfo h1 {
+        font-size: 2vh !important;
+    }
+
+    .brand-logo {
+        height: 3vh;
+    }
+
+    .contact {
+        width: 35vw !important;
+        color: #7a45ed !important;
+        border-right: none;
+        border-left: 3px solid #7a45ed;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }
 
 /* <Large Devices media query /> */
 @media (min-width:992px) {
-    .Serviceinfo p {
-        font-size: 15px;
-        margin: 12px;
-        width: 50%;
+    .load {
+        display: block;
     }
 
-    .serviceCard {
-        height: 50vh;
+    .load-img {}
+
+    .nav-menu li:hover::before {
+        height: 80%;
     }
+
+    #crossMark {
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 44px !important;
+        font-weight: bold;
+        font-family: "Roboto";
+    }
+
+    .serviceCard h1 {
+        font-size: 34px !important;
+    }
+
+    .serviceCard p {
+        font-size: 26px !important;
+    }
+
+    .project-main-info h1 {
+        color: #7a45ed;
+        border-right: 3px solid #7a45ed;
+        border-left: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 44px !important;
+    }
+
+    .contact {
+        color: #7a45ed !important;
+        border-right: none;
+        border-left: 3px solid #7a45ed;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    .homePage-IMG {
+        height: 60vh;
+    }
+
+    .about {
+        width: 15vw;
+    }
+
+    .Serviceinfo h1 {
+        width: 15vw;
+
+    }
+
+    .service-img {
+        height: 40vh;
+    }
+
+    .project-main-info h1 {
+        width: 30vw;
+    }
+
+    .contact {
+        width: 15vw !important;
+    }
+
+    .image-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button2 {
+        font-size: 16px !important;
+        border-color: #7a45ed;
+    }
+
+    .image-card h1 {
+        font-size: 4vh;
+    }
+
+    .about-info {
+        margin-top: 10vh;
+        order: 1 !important;
+    }
+
+    .image-card p {
+        font-size: 2vh;
+        margin: 12px;
+    }
+
+    .image-card button {
+        border-radius: 4vw;
+        width: 10vw !important;
+    }
+
 
     .navbar {
         position: -webkit-sticky;
@@ -482,8 +599,48 @@ hr {
         height: 20vh;
     }
 
+    .project-img2 {
+        height: 23vh !important;
+        width: 23vw;
+    }
+
+
     .skills-bg {
         height: 50vh;
         margin-top: 2vh;
     }
+
+    .navbar-nav li:hover {
+        border-bottom: 1px solid black;
+        transition: 0.5s all ease-in;
+    }
+
+    .email {
+        width: 74%;
+    }
+
+    .contact-info {
+        margin-top: 5vh;
+    }
+
+    .send {
+        width: 15vw;
+    }
+
+    #homepage {
+        height: 100vh !important;
+    }
+
+}
+
+.topButton {
+    border: 1px solid black !important;
+    color: black;
+    background-color: white;
+
+}
+
+.project-img2 {
+    height: 23vh !important;
+    width: 23vw;
 }
