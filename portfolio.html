@@ -18,298 +18,330 @@
 </head>
 
 <body>
+    <body onload="loading()">
     <!--Header section Starting-->
-    <nav class="navbar navbar-expand-lg shadow">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span class="logo">
-                    <img src="https://ik.imagekit.io/oeyoakvay/hat.png?updatedAt=1690109886770" class="nav-logo" />
-                    <strong>PortFolio</strong>
-                </span>
-            </a>
-            <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link  navName" id="homeBtn" aria-current="page" href="#homePage">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navName" id="aboutBtn" href="#aboutSection">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navName" id="serviceBtn" href="#serviceSection">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navName" id="projectBtn" href="#projectSection">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navName" id="contactBtn" href="#contactSection">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--Header Section End-->
-
-    <!--Home page start-->
-    <div class="bg" id="homePageSection">
-        <div id="homePage" class="justify-content-center">
-            <div class="container d-flex flex-column justify-content-center">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <h1>I'm a <span class="element"> </span></h1>
-                        <p><i class="fa-regular fa-circle-dot dot"></i> Mern Stack Developer </p>
-                        <p>and Passionate about learning new Technologies </p>
-                        <!--Icon bar-->
-                        <div>
-                            <a href="https://www.linkedin.com/in/hemanth-chinthalacheruvu-23a253227"><i class="fa-brands fa-linkedin-in social-icon"></i> </a>
-                        </div> <br>
-                        <!--Button's -->
-                        <div>
-                            <a href="#contactSection"> <button class="contact-me button mt-3 shadow">Contact Me</button> </a>
-                            <a href="https://media.licdn.com/dms/document/media/D562DAQG1g1eb2DBqUQ/profile-treasury-document-pdf-analyzed/0/1688054080120?e=1691020800&v=beta&t=qeR3GmrUkwZYv9Z31oeZCx5kOzCDM5KJP-TConXdCMA" target="_blank"> <button class="button Resume shadow">Resume</button> </a>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 justify-content-center">
-                        <div class="homeImage-Container">
-                            <img src="https://strapi.naix.ai/uploads/undraw_feeling_proud_qne1_41d91ae128.svg" class="homePage-IMG" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Home page End-->
-
-    <!--About Section start-->
-    <div class="about-section" id="aboutSection">
-        <h1 class="about">About Me</h1>
-        <p class="bio">
-            My name is Hemanth and I enjoy creating things that live an the internet. I'm a
-            passionate Full Stack Developer, with strong administrative and communication skills,
-            good attention to detail and the ability to write efficient code using MERN Stack.
-        </p>
-        <div class="secondContainer">
-            <div class="btn-Container">
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <button id="skillsBtn" class="button1">Skills</button>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <button id="experienceBtn" class="button1">Experience</button>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <button id="educationBtn" class="button1">Education</button>
-                    </div>
-                </div>
-                <!--Skills-->
-                <div class="skills-bg">
-                    <div id="skillsInfo" class="mt-4 ">
-                        <h2 class="about-title">Frontend</h2>
-                        <p class="about-desc">
-                            HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT**.
-                        </p>
-                        <hr>
-                        <h2 class="about-title">Backend</h2>
-                        <p class="about-desc">
-                            NODEJS, EXPRESS**.
-                        </p>
-                        <hr>
-                        <h2 class="about-title">DataBase</h2>
-                        <p class="about-desc">SQL</p>
-                        <hr>
-                        <h2 class="about-title">DevOps</h2>
-                        <p class="about-desc">Git, GitHub, AWS**</p>
-                        <span class="learn">**Learning in Progress </span>
-                    </div>
-                    <!--Experience-->
-                    <div class="experience-info " id="experienceInfo">
-                        <div class="d-flex flex-row">
-                            <img src="https://bharatintern.live/b/icons/logoNoBg.png" class="intern-img" />
-                            <div class="intern-info ">
-                                <!--First-->
-                                <span><span class="intern-roles">Web Developer</span><br>
-                                    <span class="intern-company">Bharat.Intern</span><br>
-                                    <span class="intern-due">Jul 2023 . 1mo</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Education-->
-                    <div class="education-info" id="educationInfo">
-                        <div class="d-flex flex-row">
-                            <img src="https://anurag.ac.in/wp-content/uploads/2020/10/Anurag-Logo.png" class="intern-img clg-img" />
-                            <div class="clg-info intern-info">
-                                <span><span class="intern-roles colleg-name">ANRK </span><br>
-                                    <span class="clg-edu intern-company">B-Tech, Electrical and Electronics Engineering </span><br>
-                                    <span class="clg-due intern-due">Jun/15/2019 - Aug/25/2022</span>
-                                    <span class="intern-roles"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--About Section End-->
-
-    <!--Services Start-->
-    <div id="serviceSection">
-        <div class="Serviceinfo">
-            <h1 class="ml-5">Service</h1>
-            <p class="ml-5">If yu want make a software for your business contact me. I make as soom as possible.
-                You really like my work, if you don't change this untill you like idf you want to make a software for you business contact me . I make as soon</p>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="serviceCard">
-                    <div class="serviceLogo">
-                        <i class="fa-solid fa-crop-simple"></i>
-                    </div>
-                    <div class="ServiceInfo1">
-                        <h1>UI / UX</h1>
-                        <p>UI / UX design is to constantly monitor data on product usability and find ways to improve existing products. When you Need to create an app or website, also i will Test it basedmon your Requirements </p>
-                        <button class="button2">Read More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="serviceCard">
-                    <div class="serviceLogo">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="ServiceInfo1">
-                        <h1>Web Development </h1>
-                        <p>Web Development desiggn is the approach that suggests that design and development should respond to the user's behaviour environment based on screen size, platform and orientation.</p>
-                        <button class="button2 button3">Read More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="serviceCard">
-                    <div class="serviceLogo">
-                        <i class="fa-solid fa-crop-simple"></i>
-                    </div>
-                    <div class="ServiceInfo1">
-                        <h1>Web Design </h1>
-                        <p> It is the building and maintenance of websites, it's the work that happens behind the scenes to..
-                            Cusomisable sites are templates set layouts. You may be able to change | Make unique templates for you.
-                        </p>
-                        <button class="button2">Read More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Services End-->
-
-    <!--Projects section starts-->
-    <div class="projectSection about-section" id="projectSection">
-        <h1>My Recent Works</h1>
-        <p>Following project showcases my skills and experience through real-world exampls of my work. each project is briefly described with links to code respositories and live demos in it. It reflects my ability to work with different technologies, and manage projects effectivel.</p>
-        <div>
-            <div class="projects">
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="projectCard">
-                            <div class="ProjectImgContainer">
-                                <img src="https://ik.imagekit.io/oeyoakvay/netflix%20page.png?updatedAt=1690284855566" class="project-img" />
-                            </div>
-                            <div class="projectInfo">
-                                <h1>Netflix Landing Page</h1>
-                                <p>
-                                    This respository contains the code for building a Netflix-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a starting a point for creating simiar interfaces or learning web development techniques. ⚙
-                                </p>
-                                <button class="button btnDemo "> <a href="https://netflixworld.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="projectCard">
-                            <div class="ProjectImgContainer">
-                                <img src="https://ik.imagekit.io/oeyoakvay/game.png?updatedAt=1690287449914" class="project-img" />
-                            </div>
-                            <div class="projectInfo">
-                                <h1>Game Corner</h1>
-                                <p>The website is a great medium to promote a video game, create an online and The player plays the game in the same type of browser that displays websites because the game is located on a website and also installation and Faqs about the installation are provided, online multiplayer games..
-                                </p>
-                                <button class="button btnDemo "> <a href="https://hemanthgames.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="projectCard">
-                            <div class="ProjectImgContainer">
-                                <img src="https://ik.imagekit.io/oeyoakvay/food.png?updatedAt=1690291494664" class="project-img" />
-                            </div>
-                            <div class="projectInfo">
-                                <h1>Food Munch</h1>
-                                <p>A website Provides Food service and Fresh Food deliver, Best offers
-                                    food coupons and discount offers are available in it .
-                                    and clients are provided their reviews and arting for the best food and delivery and payment method is observed and checked by the separate payment with a security .</p>
-                                <button class="button btnDemo "> <a href="https://hemanthfoodies.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Projects section Ends-->
-    <!--Contact Form starts-->
-    <div class="contactForm about-section" id="contactSection">
-        <div class="contactSection">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h1>Contact Me</h1>
-                    <div class="contact-in d-flex flex-row">
-                        <p class="mail"><i class="fa-solid fa-envelope"></i> hemanth.chinthalacheruvu@gmail.com</p>
-                    </div>
-                    <a href="https://www.linkedin.com/in/hemanth-chinthalacheruvu-23a253227">
-                        <p class="linkedin"><i class="fa-brands fa-linkedin-in"></i> hemanth-tech</p>
+    <div id="mainPage" style="display:none;">
+        <div class="navAndHome">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <span class="logo">
+                            <img src="https://ik.imagekit.io/oeyoakvay/hat.png?updatedAt=1690109886770" class="nav-logo" />
+                            <strong>PortFolio</strong>
+                        </span>
                     </a>
+                    <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars" id="bars"></i>
+                        <i class="fa-solid fa-xmark" id="crossMark"></i>
+                    </span>
+                    <div class="collapse navbar-collapse justify-content-center nav-menu" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link  navName" id="homeBtn" href="#homePage" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navName" id="aboutBtn" href="#aboutSection">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navName" id="serviceBtn" href="#serviceSectionEl">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navName" id="projectBtn" href="#projectSection">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navName" id="contactBtn" href="#contactSectionEl">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6">
+            </nav>
+            <!--Header Section End-->
+            <!--Home page start-->
+            <div class="bg" id="homePageSection">
+                <div id="homePage">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h1>Hi_I'm Hemanth</h1>
+                                <h1>I'm a <span class="element"> </span></h1>
+                                <p><i class="fa-regular fa-circle-dot dot"></i>
+                                    And Passionate about learning new Technologies </p>
+                                <!--Icon bar-->
+                                <div>
+                                    <a href="https://www.linkedin.com/in/hemanth-chinthalacheruvu-1h1" target="_blank"><i class="fa-brands fa-linkedin-in social-icon"></i> </a>
+                                    <a href="https://github.com/Hemanth1Code/Netflix-Landing-Page.git" target="_blank"><i class="fa-brands fa-github social-icon"></i> </a>
+                                    <a href="" target="_blank"><i class="fa-brands fa-instagram social-icon"></i> </a>
+                                </div>
+                                <!--Button's -->
+                                <div>
+                                    <a href="#contactSection"> <button class="contact-me button mt-3 shadow">Contact Me</button> </a>
+                                    <a href="https://drive.google.com/file/d/1QKPH1AqTb7tNfp0u-oga1q88EHN5MQMk/view?usp=drive_link" target="_blank"> <button class="button Resume shadow">Resume</button> </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class=" homeImage-Container text-center">
+                                    <img src="https://oasisinfobyte.com/image/ab.svg" class=" homePage-IMG1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Home page End-->
 
-                    <div class="form">
-                        <label for="inputName">Your Name <span class="star">*</span></label><br>
-                        <input id="inputName" type="text" name="name" placeholder="Enter Your Name" class="m-2" required>
-                        <br>
-                        <!--Input Email-->
-                        <label for="inputMail">Email <span class="star">*</span></label><br>
-                        <input id="inputMail" type="email" name="email" placeholder="Enter Email Here " class="m-2" required>
-                        <br>
-                        <!--Text Msg-->
-                        <label for="inputMsg">Message <span class="star">*</span></label><br>
-                        <textarea id="inputMsg" cols="25" rows="4" name="msg" placeholder="Enter Message" class="m-2"></textarea><br>
-                        <!--Submit Button-->
-                        <!-- Button trigger modal -->
-                        <button id="submitBtn" type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Send
-                        </button>
+                    <!--About Section start-->
+                    <div class="about-section" id="aboutSection">
+                        <div class="row">
+                            <div class="col-12 col-lg-6  about-info">
+                                <h1 class="about">About Me</h1>
+                                <p class="bio">
+                                    My name is Hemanth and I enjoy creating things that live on the internet. I'm a
+                                    Passionate Full Stack Developer, with strong administrative and communication skills .
+                                    <span class="d-none d-lg-block">
+                                        > I have experience with CSS, HTML, Bootstrap, Javascript, Python, Node-Js, SQL Lite...
+                                        So, if you're interested in having a website a new design, a web designer, then feel free to let me know and I'll be happy to work with you. Thank You.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="https://oasisinfobyte.com/image/Data%20extraction-rafiki%20(1).svg" class="homePage-IMG1" />
+                            </div>
 
-                        <!-- Modal -->
-                        <div>
-                            <!--Error Msg-->
-                            <p id="ErrorMsg"></p>
-                            <!--Scroll To Top -->
-                            <div class="d-flex flex-row justify-content-end">
-                                <button onclick="topBtn()" title="top button" class="topButton"><i class="fa-solid fa-arrow-up"></i></button>
+
+                        </div>
+                        <!--About Section End-->
+                        <!--Services Start-->
+                        <div id="serviceSectionEl">
+                            <div class="Serviceinfo">
+                                <h1 class="ml-5">Services</h1>
+                                <p class="ml-5">If you want to make a software for your busines, contact me. I make as soon as possible.
+                                    You really like my work, if you don't change this until you like ..changes done to done software for your business contact me .</p>
+                            </div>
+                            <div class="serviceCard">
+                                <div class="row">
+                                    <div class="serviceLogo">
+                                        <i class="fa-solid fa-crop-simple"></i>
+                                    </div>
+                                    <div class="ServiceInfo1">
+                                        <div class="image-card">
+                                            <img src="https://oasisinfobyte.com/image/Font-amico%20(1).svg" class="homePage-IMG" />
+                                            <div class="">
+                                                <h1>UI / UX</h1>
+                                                <p>UI / UX design is to constantly monitor data on product usability and find ways to improve existing products. When you Need to create an app or website, also I will be testing it based on your requirements </p>
+                                                <button class="button2 shadow">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="serviceCard">
+                                        <div class="row">
+                                            <div class="serviceLogo">
+                                                <i class="fa-solid fa-code"></i>
+                                            </div>
+                                            <div class="ServiceInfo1">
+                                                <div class="image-card">
+                                                    <div class="order-2">
+                                                        <img src="https://oasisinfobyte.com/image/wbd.svg" class="homePage-IMG" />
+                                                    </div>
+                                                    <div>
+                                                        <h1>Web Development </h1>
+                                                        <p>
+                                                            Web Development design is the approach that suggests that design and development should respond to the user's behaviour environment based on screen size, platform and orientation.</p>
+                                                        <button class="button2 button3 shadow">Read More</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="serviceCard">
+                                            <div class="row">
+                                                <div class="serviceLogo">
+                                                    <i class="fa-solid fa-crop-simple"></i>
+                                                </div>
+                                                <div class="ServiceInfo1">
+                                                    <div class="image-card">
+                                                        <img src="https://oasisinfobyte.com/image/ui.svg" class="homePage-IMG" />
+                                                        <div>
+                                                            <h1>Web Design </h1>
+                                                            <p> It is the building and maintenance of websites, it's the work that happens behind the scenes too..
+                                                                customisable sites are templates set layouts. You may be able to change | Make unique templates for you.
+                                                            </p>
+                                                            <button class="button2 shadow">Read More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Services End-->
+                        <!--Projects section starts-->
+                        <div class="projectSection about-section" id="projectSection">
+                            <div class="project-main-info">
+                                <h1>My Recent Works</h1>
+                                <p>Following project showcases my skills and experience through real-world examples of my work. each project is briefly described with links to code repositories and live demos in it. It reflects my ability to work with different technologies, and manage projects effectively.</p>
+                            </div>
+                            <div>
+                                <div class="projects">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div class="projectCard shadow">
+                                                <div class="ProjectImgContainer">
+                                                    <img src="https://ik.imagekit.io/oeyoakvay/netflix%20page.png?updatedAt=1690284855566" class="project-img" />
+                                                </div>
+                                                <div class="projectInfo">
+                                                    <h1><img src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*ty4NvNrGg4ReETxqU2N3Og.png" class="brand-logo" /> Netflix Landing Page</h1>
+                                                    <p>
+                                                        This repository contains the code for building a Netflix-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a starting a point for creating similar interfaces or learning web development techniques. ⚙
+                                                    </p>
+                                                    <button class="btn btnDemo "> <a href="https://netflixworld.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                    <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Netflix-Landing-Page.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="projectCard shadow">
+                                                <div class="ProjectImgContainer">
+                                                    <img src="https://ik.imagekit.io/oeyoakvay/game.png?updatedAt=1690287449914" class="project-img" />
+                                                </div>
+                                                <div class="projectInfo">
+                                                    <h1><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v7hrwudmu1agxikj4gob" class="brand-logo" /> Game Corner</h1>
+                                                    <p>The website is a great medium to promote a video game, create an online and The player plays the game in the same type of browser that displays websites because the game is located on a website and also installs and Faqs about the installation are provided, online multiplayer games..
+                                                    </p>
+                                                    <button class="btn btnDemo "> <a href="https://hemanthgames.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                    <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Game_Website.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="projectCard shadow">
+                                                <div class="ProjectImgContainer">
+                                                    <img src="https://ik.imagekit.io/oeyoakvay/food.png?updatedAt=1690291494664" class="project-img" />
+                                                </div>
+                                                <div class="projectInfo">
+                                                    <h1><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="brand-logo" /> Food Munch</h1>
+                                                    <p>A website Provides Food service and Fresh Food delivers, Best offers
+                                                        Food coupons and discount offers are available in it .
+                                                        And clients are provided their reviews and rating for the best food and delivery and payment method is observed and checked by the separate payment with a security .</p>
+                                                    <button class="btn btnDemo "> <a href="https://hemanthfoodies.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                    <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Food-Munch.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="moreProjects">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="projectCard shadow">
+                                                        <div class="ProjectImgContainer">
+                                                            <img src="https://ik.imagekit.io/oeyoakvay/tribute.png?updatedAt=1692351501978" class="project-img" />
+                                                        </div>
+                                                        <div class="projectInfo">
+                                                            <h1><img src="https://res.cloudinary.com/dzdgpwtox/image/upload/w_450,c_scale,f_auto/v1616059992/final_designs/seller_design_155679/f_20210318093310.png" class="brand-logo" /> Tribute Page</h1>
+                                                            <p>
+                                                                A tribute page about the Chhatrapathi Shivaji Maharaj, also spelled Sivaji (born February 19, 1630 , or April 1627, Shivneri Fort, Poona [now Pune], India-died April 3, 1680, Rajgarh), founder of the Maratha Kingdom of India. The Kingdom's security was based on religious toleration and on the functional integration of the Brahmans, Marathas, and Prabhus.
+                                                            </p>
+                                                            <button class="btn btnDemo "> <a href="https://oasistribute.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                            <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Tribute_Page.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="projectCard shadow">
+                                                        <div class="ProjectImgContainer">
+                                                            <img src="https://ik.imagekit.io/oeyoakvay/calculator.png?updatedAt=1692351537535" class="project-img" />
+                                                        </div>
+                                                        <div class="projectInfo">
+                                                            <h1><img src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png" class="brand-logo" /> Calculator</h1>
+                                                            <p>
+                                                                This is a simple calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.
+                                                                Control the calculator using a mouse, keyboard or number pad, or by touch if supported by your device. </p>
+                                                            <button class="btn btnDemo "><a href="https://oasiscalc.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                            <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Calculator_Oasis.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="projectCard shadow">
+                                                        <div class="ProjectImgContainer">
+                                                            <img src="https://ik.imagekit.io/oeyoakvay/todolist.png?updatedAt=1692351521605" class="project-img" />
+                                                        </div>
+                                                        <div class="projectInfo">
+                                                            <h1><img src="https://user-images.githubusercontent.com/69080584/119517399-c6f10280-bda1-11eb-9af9-4bdc197dcd65.png" class="brand-logo" /> Todo-List</h1>
+                                                            <p>
+                                                                A task management solution, designed to make life easier.
+                                                                ● Streamlined task management through a combination of HTML, CSS, and Bootstrap for an intuitive interface.
+                                                                ● Secure task persistence with an local storage methods, ensuring that your tasks are always available.
+                                                                Technologies used: HTML, CSS, JS, Bootstrap
+
+                                                            </p>
+                                                            <button class="btn btnDemo "> <a href="https://oasistodolis.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                            <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Oasis_Todo-List.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="projectCard shadow">
+                                                        <div class="ProjectImgContainer">
+                                                            <img src="https://ik.imagekit.io/oeyoakvay/Screenshot%20(89).png?updatedAt=1692967034896" class="project-img2 project-img" />
+                                                        </div>
+                                                        <div class="projectInfo">
+                                                            <h1><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/56-apple-512.png" class="brand-logo" /> Apple Landing Page</h1>
+                                                            <p>
+                                                                This repository contains the code for building an Apple-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a apple products starting interfaces or learning web development techniques. ⚙
+                                                            </p>
+                                                            <button class="btn btnDemo "> <a href="https://hemanthistore.ccbp.tech/" target="_blank" class="">View Demo <i class="fa-solid fa-pen-to-square demo-icon"></i></a> </button>
+                                                            <button class="btn btnDemo1 "> <a href="https://github.com/Hemanth1Code/Prodigi_Landing_Page.git" target="_blank" class="">View Code <i class="fa-brands fa-github demo-icon"></i></a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-end" id="moreProjectBtn">
+                                            <button id="closeProjects" class="buttonmore m-2">Close More..</button>
+                                            <button id="moreBtn" class="buttonmore m-2 ">More...</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contactSectionEl" class="mt-3">
+                            <h1 class="text-center contact">Contact</h1>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 text-center"><img src="https://oasisinfobyte.com/image/Contact%20us-amico%20(2).svg" class="homePage-IMG" /></div>
+                                <div class="col-12 col-lg-6 contact-info text-center">
+                                    <div class="form">
+                                        <input id="firstname" type="text" name="name" class="shadow m-2" placeholder="First Name" required>
+                                        <br class="d-block d-lg-none">
+                                        <input id="lastname" type="name" name="name" class="shadow m-2" placeholder="Last Name" required>
+                                        <br class="d-block d-lg-none">
+                                        <input id="email" type="email" name="email" class="shadow email m-2" placeholder="Email" required>
+                                        <br class="d-block d-lg-none">
+                                        <textarea id="msgTxt" rows="5" class="shadow email" name="msg" placeholder="Message" required></textarea>
+                                        <br class="d-block d-lg-none">
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <button class="button button2 send" id="sendBtn">Send</button>
+                                        </div>
+                                        <p id="errorMsg"></p>
+                                        <p id="errorMsg1"></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Loading-->
     </div>
-    <!--Contact Form Ends-->
-    <script>
-        var typed = new Typed('.element', {
+    <div id="loaderEl">
+        <div class="text-center load">
+            <img src="https://usagif.com/wp-content/uploads/loading-14.gif" class="load-img">
+        </div>
+    </div>
+<script>    var typed = new Typed('.element', {
             strings: ["Web Designer.", "Programmer.", "Coder."],
             typeSpeed: 150,
             backspeed: 0,
