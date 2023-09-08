@@ -1,60 +1,28 @@
+let bars = document.getElementById('bars')
+let crossMark = document.getElementById('crossMark')
+let navbarNav = document.getElementById('navbarNav');
+
+bars.onclick = function() {
+    bars.style.display = 'none';
+    crossMark.style.display = 'block';
+}
+crossMark.onclick = function() {
+    bars.style.display = 'block';
+    crossMark.style.display = 'none';
+}
+
+function mainPage() {
+    document.getElementById('mainPage').style.display = 'block';
+    document.getElementById('loaderEl').style.display = 'none';
+
+}
+
+function loading() {
+    loader = setTimeout(mainPage, 3000);
+    document.getElementById('loaderEl').style.display = 'block';
+
+}
 /*btns */
-let skillsBtnEl = document.getElementById('skillsBtn');
-let experienceBtnEl = document.getElementById('experienceBtn');
-let educationBtnEl = document.getElementById('educationBtn');
-
-/*info */
-let skillsInfoEl = document.getElementById('skillsInfo');
-let experienceInfoEl = document.getElementById('experienceInfo');
-let educationInfoEl = document.getElementById('educationInfo');
-
-
-skillsBtnEl.onclick = function() {
-    experienceInfoEl.style.display = 'none';
-    educationInfoEl.style.display = 'none';
-    skillsInfoEl.style.display = 'block';
-
-    skillsBtnEl.style.backgroundColor = 'black';
-    skillsBtnEl.style.color = 'white';
-
-    experienceBtnEl.style.backgroundColor = 'white';
-    experienceBtnEl.style.color = 'black';
-
-    educationBtnEl.style.backgroundColor = 'white';
-    educationBtnEl.style.color = 'black';
-
-};
-
-experienceBtnEl.onclick = function() {
-    educationInfoEl.style.display = 'none';
-    skillsInfoEl.style.display = 'none';
-    experienceInfoEl.style.display = 'block';
-
-    experienceBtnEl.style.backgroundColor = 'black';
-    experienceBtnEl.style.color = 'white';
-    skillsBtnEl.style.backgroundColor = 'white';
-    skillsBtnEl.style.color = 'black';
-    educationBtnEl.style.backgroundColor = 'white';
-    educationBtnEl.style.color = 'black';
-
-
-};
-
-educationBtnEl.onclick = function() {
-    experienceInfoEl.style.display = 'none';
-    skillsInfoEl.style.display = 'none';
-    educationInfoEl.style.display = 'block';
-
-    educationBtnEl.style.backgroundColor = 'black';
-    educationBtnEl.style.color = 'white';
-
-    skillsBtnEl.style.backgroundColor = 'white';
-    skillsBtnEl.style.color = 'black';
-
-    experienceBtnEl.style.backgroundColor = 'white';
-    experienceBtnEl.style.color = 'black';
-
-};
 
 let home = document.getElementById('homeBtn');
 let about = document.getElementById('aboutBtn');
@@ -67,110 +35,158 @@ let homePageEl = document.getElementById('homePageSection');
 let aboutSectionEl = document.getElementById('aboutSection');
 let serviceSectionEl = document.getElementById('serviceSection');
 let projectSectionEl = document.getElementById('projectSection');
-let contactSectionEl = document.getElementById('contactSection');
+let contactEl = document.getElementById('contactSectionEl');
 
 home.onclick = function() {
 
     //Display //
-    homePageEl.style.display = 'block';
-    aboutSectionEl.style.display = 'block';
-    serviceSectionEl.style.display = 'block';
-    contactSectionEl.style.display = 'block';
-    projectSectionEl.style.display = 'block';
+
+    home.style.backgroundColor = 'black';
+    home.style.color = 'white';
+    about.style.backgroundColor = 'transparent';
+    about.style.color = 'black';
+    service.style.backgroundColor = 'transparent';
+    service.style.color = 'black';
+    project.style.backgroundColor = 'transparent';
+    project.style.color = 'black';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+
+    home.style.color = 'white';
+
+    homePageEl.classList.add('homePage')
     //
+
 }
 about.onclick = function() {
 
     //Display //
-    homePageEl.style.display = 'none';
 
-    aboutSectionEl.style.display = 'block';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    about.style.backgroundColor = 'black';
+    about.style.color = 'white';
+    service.style.backgroundColor = 'transparent';
+    service.style.color = 'black';
+    project.style.backgroundColor = 'transparent';
+    project.style.color = 'black';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
 
-    serviceSectionEl.style.display = 'none';
-    contactSectionEl.style.display = 'none';
-    projectSectionEl.style.display = 'none';
-    //
+
+    //   
+
 }
 service.onclick = function() {
 
     //Display //
-    homePageEl.style.display = 'none';
-    aboutSectionEl.style.display = 'none';
 
-    serviceSectionEl.style.display = 'block';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    about.style.backgroundColor = 'transparent';
+    about.style.color = 'black';
+    service.style.backgroundColor = 'black';
+    service.style.color = 'white';
+    project.style.backgroundColor = 'transparent';
+    project.style.color = 'black';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
 
-    contactSectionEl.style.display = 'none';
-    projectSectionEl.style.display = 'none';
+
     //
 }
 
 project.onclick = function() {
 
     //Display //
-    homePageEl.style.display = 'none';
-    aboutSectionEl.style.display = 'none';
-    serviceSectionEl.style.display = 'none';
-    contactSectionEl.style.display = 'none';
 
-    projectSectionEl.style.display = 'block';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    about.style.backgroundColor = 'transparent';
+    about.style.color = 'black';
+    service.style.backgroundColor = 'transparent';
+    service.style.color = 'black';
+    project.style.backgroundColor = 'black';
+    project.style.color = 'white';
+    contact.style.backgroundColor = 'transparent';
+    contact.style.color = 'black';
+
+
+
+
     //
 
 }
 contact.onclick = function() {
 
     //Display //
-    homePageEl.style.display = 'none';
-    aboutSectionEl.style.display = 'none';
-    serviceSectionEl.style.display = 'none';
 
-    contactSectionEl.style.display = 'block';
+    home.style.backgroundColor = 'transparent';
+    home.style.color = 'black';
+    about.style.backgroundColor = 'transparent';
+    about.style.color = 'black';
+    service.style.backgroundColor = 'transparent';
+    service.style.color = 'black';
+    project.style.backgroundColor = 'transparent';
+    project.style.color = 'black';
+    contact.style.backgroundColor = 'black';
+    contact.style.color = 'white';
 
-    projectSectionEl.style.display = 'none';
     //
 }
 
 //Contact Form //
 
-let inputName = document.getElementById('inputName');
-let inputEmail = document.getElementById('inputMail');
-let inputMsg = document.getElementById('inputMsg');
+let moreBtnEl = document.getElementById('moreBtn');
+let closeProjectsEl = document.getElementById('closeProjects');
+let moreProjectsEl = document.getElementById('moreProjects');
 
-let submitBtn = document.getElementById('submitBtn');
-let err = document.getElementById('ErrorMsg');
-submitBtn.onclick = function() {
-    if (inputName.value === "") {
-        err.textContent = "";
-    } else if (inputEmail.value === "") {
-        err.textContent = "";
+moreBtnEl.onclick = function() {
 
-    } else if (inputMsg.value === "") {
-        err.textContent = "";
+    moreProjectsEl.style.display = 'block';
+    closeProjectsEl.style.display = 'block';
+    moreBtnEl.style.display = 'none';
+}
+closeProjectsEl.onclick = function() {
+
+    moreProjectsEl.style.display = 'none';
+    closeProjectsEl.style.display = 'none';
+    moreBtnEl.style.display = 'block';
+}
+//Contact Info //
+let msgFormEl = document.getElementById('msgForm');
+let firstnameEl = document.getElementById('firstname');
+let lastnameEl = document.getElementById('lastname');
+let emailEl = document.getElementById('email');
+let msgTxtEl = document.getElementById('msgTxt');
+let sendBtnEl = document.getElementById('sendBtn');
+let errorMsgEl = document.getElementById('errorMsg');
+let errorMsgEl1 = document.getElementById('errorMsg1');
+
+
+sendBtnEl.onclick = function() {
+    if (firstnameEl.value === "") {
+        errorMsgEl.textContent = 'Enter First Name';
+        errorMsgEl1.textContent = '';
+    } else if (lastnameEl.value === "") {
+        errorMsgEl.textContent = 'Enter Last Name';
+        errorMsgEl1.textContent = '';
+
+    } else if (emailEl.value === "") {
+        errorMsgEl.textContent = 'Enter Email';
+        errorMsgEl1.textContent = '';
+
+    } else if (msgTxtEl.value === "") {
+        errorMsgEl.textContent = 'Enter Message';
+        errorMsgEl1.textContent = '';
 
     } else {
-        inputName.value = '';
-        inputMsg.value = '';
-        inputEmail.value = '';
-        err.textContent = 'Thank You';
-
+        firstnameEl.value = '';
+        lastnameEl.value = '';
+        emailEl.value = '';
+        msgTxtEl.value = '';
+        sendBtnEl.textContent = 'Send'
+        errorMsgEl1.textContent = 'Thank You...!'
+        errorMsgEl1.classList.add('thank')
     }
-}
-
-//scroll to Top //
-window.onscroll = function() {
-    scrollToTopFunc()
-};
-
-function scrollToTopFunc() {
-    if (document.body.scrollToTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.display = 'block';
-
-    } else {
-        topBtn.style.display = 'none';
-    }
-
-}
-
-function topBtn() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
